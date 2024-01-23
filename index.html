@@ -17,39 +17,39 @@
 
   <div class="container">
 
-    <div id="notification" class="notification">
+    <div id="notification" data-cy="notification" class="notification">
       Veuillez remplir tous les champs requis.
     </div>
 
     <form onsubmit="return validateForm()">
 
       <label for="lastName"> <span> *</span> Nom </label>
-      <input type=" text" name="lastName" placeholder="Entrez votre nom" id="lastName" />
+      <input type=" text" name="lastName" placeholder="Entrez votre nom" id="lastName" data-cy="lastName" />
 
       <label for="firstName"> <span> *</span> Prénom </label>
-      <input type="text" name="lastName" placeholder="Entrez votre prénom" id="firstName" />
+      <input type="text" name="lastName" placeholder="Entrez votre prénom" id="firstName" data-cy="firstName" />
 
       <label for="email"> <span> *</span> Email</label>
-      <input type="email" name="email" id="email" placeholder="Entrez votre email" />
+      <input type="email" name="email" id="email" placeholder="Entrez votre email" data-cy="email" />
 
       <label for="age"><span> *</span> Age</label>
-      <input type="text" name="age" id="age" placeholder="Entrez votre age" />
+      <input type="text" name="age" id="age" placeholder="Entrez votre age" data-cy="age" />
 
       <label>Est-ce que tu recommanderais Automation Tester Academy à un ami ?</label>
-      <div class="radio">
+      <div class="radio" data-cy="radioelement">
 
         <label>
-          <input type="radio" name="recommend" value="yes" />
+          <input type="radio" name="recommend" value="yes" data-cy="radio-yes" />
           Oui
         </label>
 
         <label>
-          <input type="radio" name="recommend" value="No" />
+          <input type="radio" name="recommend" value="No" data-cy="radio-no" />
           Non
         </label>
 
         <label>
-          <input type="radio" name="recommend" value="Maybe" />
+          <input type="radio" name="recommend" value="Maybe" data-cy="radio-maybe" />
           Peut-etre
         </label>
 
@@ -58,34 +58,34 @@
       <label class="target">Frameworks d'automatisation de tests que vous connaissez </label>
       <div class="checkbox">
         <label>
-          <input type="checkbox" name="skill" value="cypress" />
+          <input type="checkbox" name="skill" value="cypress" data-cy="checkboxCypress" />
           Cypress
         </label>
 
         <label>
-          <input type="checkbox" name="skill" value="selenium" />
+          <input type="checkbox" name="skill" value="selenium" data-cy="checkboxSelenium" />
           Selenium Webdriver
         </label>
 
         <label>
-          <input type="checkbox" name="skill" value="protractor" />
+          <input type="checkbox" name="skill" value="protractor" data-cy="checkboxProtractor" />
           Protractor
         </label>
 
         <label>
-          <input type="checkbox" name="skill" value="appium">
+          <input type="checkbox" name="skill" value="appium" data-cy="checkboxAppium">
           Appium
         </label>
 
         <label>
-          <input type="checkbox" name="skill" value="calabash" />
+          <input type="checkbox" name="skill" value="calabash" data-cy="checkboxCalabash" />
           Calabash
         </label>
 
       </div>
 
       <label for="level">Comment trouvez vous HTML ?<span> *</span></label>
-      <select name="level" required>
+      <select name="level" data-cy="level" required>
         <option value="low">Facile</option>
         <option value="medium">Moyen</option>
         <option value="high">Dur</option>
@@ -93,9 +93,9 @@
       </select>
 
       <label class="target" for="suggestion">Vos suggestions pour la formation</label>
-      <textarea name="suggestion" id="suggestions" cols="5" rows="4"></textarea>
+      <textarea name="suggestion" data-cy="suggestion" id="suggestions" cols="5" rows="4"></textarea>
 
-      <button type="submit" value="submit">Envoyer</button>
+      <button type="submit" value="submit" data-cy="envoyer">Envoyer</button>
       <button type="reset" value="cancel">Annuler</button>
 
     </form>
