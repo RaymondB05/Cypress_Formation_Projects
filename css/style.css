@@ -1,0 +1,101 @@
+body {
+  background-color: #839ac9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  padding: 30px 20px 10px 20px;
+}
+
+button[type=submit] {
+  background-color: #3aa463;
+  margin: 20px 0px 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+}
+
+button[type=reset] {
+  background-color: #dc1414;
+  margin: 0px 0px 0px 20px;
+  font-size: 1.2rem;
+  border: none;
+}
+
+#inscriptionTitle {
+  font-size: 10px;
+}
+
+
+input,
+select,
+button {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 550px;
+  height: 32px;
+}
+
+textarea {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 552px;
+}
+
+.container {
+  background-color: white;
+  width: 600px;
+  margin: auto;
+  padding-bottom: 8px;
+  height: fit-content;
+  box-shadow: 1px 1px 10px 0.15px;
+}
+
+.radio input,
+.checkbox input {
+  display: inline;
+  all: revert;
+}
+
+.radio label,
+.checkbox label {
+  padding-top: revert;
+}
+
+.target {
+  padding-top: 20px;
+}
+
+span {
+  color: red;
+}
+
+
+.simpleParagraph {
+  color: red;
+}
+
+.notification {
+  position: absolute;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f4be36;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  visibility: box;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}

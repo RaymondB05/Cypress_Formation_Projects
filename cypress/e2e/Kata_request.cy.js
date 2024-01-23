@@ -17,7 +17,7 @@ describe("Scénario de test 1 " , () => {
 
 
     beforeEach(() => {
-        cy.visit('http://127.0.0.1:5500/demo-form-html-css/index.html');
+        cy.visit('index.html');
       })
     
       it('Toutes les questions doivent être visibles', () => {
@@ -31,8 +31,6 @@ describe("Scénario de test 1 " , () => {
       })
 
 
-
-
     });  
 
 
@@ -41,7 +39,7 @@ describe("Scénario de test  2" , () => {
     it( " Cliquer sur 'Envoyer' / ne pas remplir tous les champs obligatoires / Un message d'information apparaît  " , () => {
 
         // Remplissage de chaque champs du formulaire avec une valeur aléatoire générée par le Faker !
-        cy.visit('http://127.0.0.1:5500/demo-form-html-css/index.html');
+        cy.visit('index.html');
 
         cy.get("#lastName").type(lname);
         cy.get("#lastName").should("be.visible").and("have.value", lname);
@@ -97,7 +95,7 @@ describe("Scénario de test  3" , () => {
     it( "Cliquer sur 'Envoyer ' ne genere aucun message d'erreur apres avoir rempli les champs obligatoires  " , () => {
 
         // Remplissage de chaque champs du formulaire avec une valeur aléatoire générée par le Faker !
-        cy.visit('http://127.0.0.1:5500/demo-form-html-css/index.html');
+        cy.visit('index.html');
 
         cy.get("#lastName").type(lname);
         cy.get("#lastName").should("be.visible").and("have.value", lname);
