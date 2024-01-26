@@ -3,22 +3,18 @@
   "version": "1.0.0",
   "description": "Projet demo ",
   "main": "index.js",
-  "defaultCommandTimeout": 20000, 
-
+  "defaultCommandTimeout": 20000,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.3",
     "faker": "^5.5.3"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.3.1"
+    "@faker-js/faker": "^8.3.1",
+    "@testing-library/cypress": "^10.0.1",
+    "cypress": "^13.6.3"
   }
-  
-  
-  
-  
 }
