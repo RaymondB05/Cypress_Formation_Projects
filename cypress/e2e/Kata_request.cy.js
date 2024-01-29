@@ -73,6 +73,7 @@ describe("Scénario de test  2", () => {
 });
 ''
 describe("Scénario de test  3", () => {
+
     it("Cliquer sur 'Envoyer ' ne genere aucun message d'erreur apres avoir rempli les champs obligatoires  ", () => {
         // Remplissage de chaque champs du formulaire avec une valeur aléatoire générée par le Faker !
         cy.visit("index.html");
